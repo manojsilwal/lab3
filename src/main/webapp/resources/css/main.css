@@ -1,0 +1,17 @@
+@CHARSET "ISO-8859-1";
+input{
+	margin-top:10px;
+}
+.login-page{
+	margin-top: 20px;
+}
+.form-signin{
+	width: 300px;
+	margin: 0 auto;
+}
+.error{
+	width:100%;
+	text-align: center;
+	margin-top: 20px;
+	color : red;
+}

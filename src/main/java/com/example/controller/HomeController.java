@@ -14,29 +14,15 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.example.service.UserSerivce;
 import com.example.service.UserServiceImpl;
 
 @Controller
-@SessionAttributes("cart")
 public class HomeController {
 	@Autowired
 	UserSerivce userService;
-	
-	@ModelAttribute("cart")
-	public String addCart(){
-		return "oneCart";
-	}
-	
-	@ModelAttribute("cart")
-	public String addCart(){
-		return "oneCart";
-	}
-	
-	
 
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
 	public String welcomePage() {
